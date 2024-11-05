@@ -1,0 +1,280 @@
+[gd_scene load_steps=34 format=3 uid="uid://dp25im8a51udp"]
+
+[ext_resource type="Script" path="res://scripts/StartScene.gd" id="1_xcxh2"]
+[ext_resource type="Texture2D" uid="uid://cfhrasomwu4ct" path="res://assets/UI/Pack/Windows/8-3.png" id="2_gg4op"]
+[ext_resource type="Texture2D" uid="uid://vunx6bi457rx" path="res://assets/UI/Pack/Windows/8-1.png" id="3_xcpbe"]
+[ext_resource type="Texture2D" uid="uid://dslkfndos1n86" path="res://assets/UI/Pack/Frames/5-3.png" id="4_7tvlh"]
+[ext_resource type="Texture2D" uid="uid://ohismw2fep4k" path="res://assets/UI/Icons/Emojis_Free97.png" id="5_bpwx6"]
+[ext_resource type="Texture2D" uid="uid://djr2twwr0eumn" path="res://assets/UI/Pack/Frames/6-2.png" id="6_v6rqh"]
+[ext_resource type="Texture2D" uid="uid://bleuuhqdqf4ip" path="res://assets/UI/Pack/Windows/7-3.png" id="7_d8a2o"]
+[ext_resource type="Texture2D" uid="uid://bgafvr34o2fbp" path="res://assets/UI/Icons/Emojis_Free2.png" id="8_14anf"]
+[ext_resource type="Texture2D" uid="uid://d34yb2e0r4j8q" path="res://assets/UI/Icons/Emojis_Free111.png" id="9_b5ypj"]
+[ext_resource type="Texture2D" uid="uid://chtsbqi2dnecg" path="res://assets/UI/Icons/Emojis_Free112.png" id="10_mgkhf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11vco"]
+bg_color = Color(0.823529, 0.47451, 0.341176, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ewtbu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_px1gg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xgb56"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qsrno"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7nk27"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8st0c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_weks6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6wlv6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5titk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ilsd7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7lb6j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_173b2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ho36q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efg2q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bu3j4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vpl8i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_74xkd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jq2pt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1msu5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dtora"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qemy0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bo4o2"]
+
+[node name="StartScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xcxh2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_11vco")
+
+[node name="GameMenu" type="Node" parent="CanvasLayer"]
+
+[node name="Window" type="Window" parent="CanvasLayer/GameMenu"]
+title = "Credits"
+initial_position = 1
+size = Vector2i(450, 300)
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer/GameMenu/Window"]
+
+[node name="1" type="CenterContainer" parent="CanvasLayer/GameMenu/Window/CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="2" type="Label" parent="CanvasLayer/GameMenu/Window/CanvasLayer/1"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Credits:
+Davide Guidi
+Leonardo Cafissi
+Alessandro Migli"
+horizontal_alignment = 1
+
+[node name="1" type="TextureRect" parent="CanvasLayer/GameMenu"]
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 330.0
+offset_bottom = 134.0
+scale = Vector2(2, 2)
+texture = ExtResource("2_gg4op")
+
+[node name="PlayButton" type="Button" parent="CanvasLayer/GameMenu/1"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 12.0
+offset_right = 196.0
+offset_bottom = 44.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ewtbu")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_px1gg")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xgb56")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qsrno")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7nk27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8st0c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_weks6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6wlv6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5titk")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ilsd7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7lb6j")
+text = "Play"
+
+[node name="2" type="TextureRect" parent="CanvasLayer/GameMenu"]
+offset_left = 80.0
+offset_top = 208.0
+offset_right = 330.0
+offset_bottom = 262.0
+scale = Vector2(2, 2)
+texture = ExtResource("2_gg4op")
+
+[node name="CreditsButton" type="Button" parent="CanvasLayer/GameMenu/2"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 12.0
+offset_right = 196.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ewtbu")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_px1gg")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xgb56")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qsrno")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7nk27")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8st0c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_weks6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6wlv6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5titk")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ilsd7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7lb6j")
+text = "Credits"
+
+[node name="3" type="TextureRect" parent="CanvasLayer/GameMenu"]
+offset_left = 80.0
+offset_top = 336.0
+offset_right = 330.0
+offset_bottom = 390.0
+scale = Vector2(2, 2)
+texture = ExtResource("3_xcpbe")
+
+[node name="ExitButton" type="Button" parent="CanvasLayer/GameMenu/3"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 12.0
+offset_right = 196.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_173b2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ho36q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_efg2q")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_bu3j4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vpl8i")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_74xkd")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jq2pt")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_1msu5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dtora")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qemy0")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bo4o2")
+text = "Exit"
+
+[node name="PlayerMenu" type="Node" parent="CanvasLayer"]
+
+[node name="1" type="TextureRect" parent="CanvasLayer/PlayerMenu"]
+offset_left = 1568.0
+offset_top = 48.0
+offset_right = 1688.0
+offset_bottom = 204.0
+scale = Vector2(2, 2)
+texture = ExtResource("4_7tvlh")
+
+[node name="PlayerIcon" type="TextureRect" parent="CanvasLayer/PlayerMenu/1"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 66.0
+offset_right = 90.0
+offset_bottom = 126.0
+pivot_offset = Vector2(30, 30)
+texture = ExtResource("5_bpwx6")
+
+[node name="2" type="TextureRect" parent="CanvasLayer/PlayerMenu"]
+offset_left = 1584.0
+offset_top = 320.0
+offset_right = 1688.0
+offset_bottom = 387.0
+scale = Vector2(2, 2)
+texture = ExtResource("6_v6rqh")
+
+[node name="3" type="TextureRect" parent="CanvasLayer/PlayerMenu"]
+offset_left = 1520.0
+offset_top = 432.0
+offset_right = 1694.0
+offset_bottom = 579.0
+scale = Vector2(2, 2)
+texture = ExtResource("7_d8a2o")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/PlayerMenu/3"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 23.0
+offset_right = 149.0
+offset_bottom = 124.0
+columns = 2
+
+[node name="1" type="TextureRect" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("8_14anf")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Info1" type="Label" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 30
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="TextureRect" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("9_b5ypj")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Info2" type="Label" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 30
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="TextureRect" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_mgkhf")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Info3" type="Label" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 30
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="close_requested" from="CanvasLayer/GameMenu/Window" to="." method="OnWindowCloseRequested"]
+[connection signal="pressed" from="CanvasLayer/GameMenu/1/PlayButton" to="." method="OnPlayButtonPressed"]
+[connection signal="pressed" from="CanvasLayer/GameMenu/2/CreditsButton" to="." method="OnCreditsButtonPressed"]
+[connection signal="pressed" from="CanvasLayer/GameMenu/3/ExitButton" to="." method="OnExitButtonPressed"]
