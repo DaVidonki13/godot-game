@@ -1,13 +1,13 @@
 [gd_scene load_steps=21 format=3 uid="uid://dlrm4csto5u4u"]
 
-[ext_resource type="Script" path="res://Scripts/GameScene.gd" id="1_ygm7y"]
-[ext_resource type="Texture2D" uid="uid://6nk40oy0gq8m" path="res://Assets/UI/Pack/Windows/6-3.png" id="2_jg2h7"]
-[ext_resource type="Texture2D" uid="uid://c7iiwka8i3dlc" path="res://Assets/UI/Pack/Windows/2-3.png" id="3_va5cu"]
-[ext_resource type="Texture2D" uid="uid://cjaju7i11n6np" path="res://Assets/UI/Pack/Elements/7-1.png" id="4_j1iqj"]
-[ext_resource type="Texture2D" uid="uid://dfaeec36xv4bw" path="res://Assets/UI/Pack/Elements/4-1.png" id="5_k3pol"]
-[ext_resource type="Texture2D" uid="uid://gifkvav2qx4c" path="res://Assets/UI/Icons/Emojis_Free50.png" id="6_yhgg0"]
-[ext_resource type="Texture2D" uid="uid://bcmf2rk6vhbxl" path="res://Assets/UI/Icons/Emojis_Free48.png" id="7_03hg8"]
-[ext_resource type="Texture2D" uid="uid://cbg41mdmlsl5v" path="res://Assets/UI/Pack/Elements/9-2.png" id="8_vdebj"]
+[ext_resource type="Script" path="res://scripts/GameScene.gd" id="1_ygm7y"]
+[ext_resource type="Texture2D" uid="uid://6nk40oy0gq8m" path="res://assets/UI/Pack/Windows/6-3.png" id="2_jg2h7"]
+[ext_resource type="Texture2D" uid="uid://c7iiwka8i3dlc" path="res://assets/UI/Pack/Windows/2-3.png" id="3_va5cu"]
+[ext_resource type="Texture2D" uid="uid://cjaju7i11n6np" path="res://assets/UI/Pack/Elements/7-1.png" id="4_j1iqj"]
+[ext_resource type="Texture2D" uid="uid://dfaeec36xv4bw" path="res://assets/UI/Pack/Elements/4-1.png" id="5_k3pol"]
+[ext_resource type="Texture2D" uid="uid://gifkvav2qx4c" path="res://assets/UI/Icons/Emojis_Free50.png" id="6_yhgg0"]
+[ext_resource type="Texture2D" uid="uid://bcmf2rk6vhbxl" path="res://assets/UI/Icons/Emojis_Free48.png" id="7_03hg8"]
+[ext_resource type="Texture2D" uid="uid://cbg41mdmlsl5v" path="res://assets/UI/Pack/Elements/9-2.png" id="8_vdebj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42sph"]
 bg_color = Color(0.823529, 0.47451, 0.341176, 1)

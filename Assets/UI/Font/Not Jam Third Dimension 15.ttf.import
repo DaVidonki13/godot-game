@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cd4p3r6wxu5xg"
-path="res://.godot/imported/Not Jam Third Dimension 15.ttf-df4124584afc54d86e8949e493e716c3.fontdata"
+path="res://.godot/imported/Not Jam Third Dimension 15.ttf-5b7e0700d987cf20cb3acc0352282d4e.fontdata"
 
 [deps]
 
-source_file="res://Assets/UI/Font/Not Jam Third Dimension 15.ttf"
-dest_files=["res://.godot/imported/Not Jam Third Dimension 15.ttf-df4124584afc54d86e8949e493e716c3.fontdata"]
+source_file="res://assets/UI/Font/Not Jam Third Dimension 15.ttf"
+dest_files=["res://.godot/imported/Not Jam Third Dimension 15.ttf-5b7e0700d987cf20cb3acc0352282d4e.fontdata"]
 
 [params]
 
