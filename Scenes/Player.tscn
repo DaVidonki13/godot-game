@@ -1,0 +1,133 @@
+[gd_scene load_steps=20 format=3 uid="uid://cpc1ut83l4fwb"]
+
+[ext_resource type="Texture2D" uid="uid://bgyo0mqgewhnk" path="res://Assets/Player/Individual Sprites/adventurer-fall-00.png" id="1_5un6d"]
+[ext_resource type="Script" uid="uid://d4jb0eo4tkquj" path="res://Scripts/Player.torch" id="1_8xsyr"]
+[ext_resource type="Texture2D" uid="uid://fnhp0l1qnxju" path="res://Assets/Player/Individual Sprites/adventurer-idle-00.png" id="1_mdtmm"]
+[ext_resource type="Texture2D" uid="uid://bu3v6f14n2omk" path="res://Assets/Player/Individual Sprites/adventurer-idle-01.png" id="2_0kmmb"]
+[ext_resource type="Texture2D" uid="uid://ctgmiba57o3rd" path="res://Assets/Player/Individual Sprites/adventurer-fall-01.png" id="2_86q40"]
+[ext_resource type="Texture2D" uid="uid://dfymemaq44ymq" path="res://Assets/Player/Individual Sprites/adventurer-jump-00.png" id="5_mocop"]
+[ext_resource type="Texture2D" uid="uid://j10g6lait3i8" path="res://Assets/Player/Individual Sprites/adventurer-jump-01.png" id="6_dp50q"]
+[ext_resource type="Texture2D" uid="uid://dmy1uwow61wqn" path="res://Assets/Player/Individual Sprites/adventurer-jump-02.png" id="7_45bpa"]
+[ext_resource type="Texture2D" uid="uid://c5vo5rr40rwwr" path="res://Assets/Player/Individual Sprites/adventurer-jump-03.png" id="8_3s62m"]
+[ext_resource type="Texture2D" uid="uid://bslvgleeos1d6" path="res://Assets/Player/Individual Sprites/adventurer-run-00.png" id="9_16dhr"]
+[ext_resource type="Texture2D" uid="uid://g0ds36xgtf1n" path="res://Assets/Player/Individual Sprites/adventurer-run-01.png" id="10_lnqat"]
+[ext_resource type="Texture2D" uid="uid://rjt2ptnl0ao5" path="res://Assets/Player/Individual Sprites/adventurer-run-02.png" id="11_lgppa"]
+[ext_resource type="Texture2D" uid="uid://deva1ccwlaxnq" path="res://Assets/Player/Individual Sprites/adventurer-run-03.png" id="12_pkixq"]
+[ext_resource type="Texture2D" uid="uid://1gmudavrc6os" path="res://Assets/Player/Individual Sprites/adventurer-run-04.png" id="13_linan"]
+[ext_resource type="Texture2D" uid="uid://duy6shlov851e" path="res://Assets/Player/Individual Sprites/adventurer-run-05.png" id="14_ldct3"]
+[ext_resource type="Texture2D" uid="uid://dhs417meo5srk" path="res://Assets/Player/Individual Sprites/adventurer-wall-slide-00.png" id="16_jxspu"]
+[ext_resource type="Texture2D" uid="uid://py34vvb2nfne" path="res://Assets/Player/Individual Sprites/adventurer-wall-slide-01.png" id="17_7lsqn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1jbrh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5un6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_86q40")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mdtmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0kmmb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_mocop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dp50q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_45bpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3s62m")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_16dhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_lnqat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lgppa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pkixq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_linan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ldct3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_jxspu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7lsqn")
+}],
+"loop": true,
+"name": &"wall_slide",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g08a5"]
+size = Vector2(10, 26)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_8xsyr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1jbrh")
+animation = &"wall_slide"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_g08a5")
+
+[node name="raycasts" type="Node2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="raycasts"]
+position = Vector2(0, -10)
+target_position = Vector2(0, -7)
+
+[node name="RayCast2D2" type="RayCast2D" parent="raycasts"]
+position = Vector2(-2, -10)
+target_position = Vector2(0, -7)
+
+[node name="RayCast2D3" type="RayCast2D" parent="raycasts"]
+position = Vector2(2, -10)
+target_position = Vector2(0, -7)
+
+[node name="RayCast2D4" type="RayCast2D" parent="raycasts"]
+position = Vector2(4, -10)
+target_position = Vector2(0, -7)
+
+[node name="RayCast2D5" type="RayCast2D" parent="raycasts"]
+target_position = Vector2(8, 0)
+
+[node name="RayCast2D6" type="RayCast2D" parent="raycasts"]
+target_position = Vector2(-8, 0)
