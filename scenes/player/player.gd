@@ -87,5 +87,5 @@ func wall_slide(delta: float) -> void:
 	
 	if is_wall_sliding:
 		play_animations("wall_slide")
-		velocity.y += (wall_slide_gravity * delta)
+		velocity.y += wall_slide_gravity * delta
 		velocity.y = min(velocity.y, wall_slide_gravity)
