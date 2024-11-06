@@ -8,6 +8,7 @@ const START_SCENE_PATH = "res://Scenes/StartScene.tscn"
 
 func _ready() -> void:
 	pauseMenu.hide()
+	Engine.time_scale = 1
 
 
 func _process(delta: float) -> void:

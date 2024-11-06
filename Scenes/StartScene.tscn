@@ -1,15 +1,15 @@
 [gd_scene load_steps=34 format=3 uid="uid://dp25im8a51udp"]
 
-[ext_resource type="Script" path="res://scripts/StartScene.gd" id="1_xcxh2"]
-[ext_resource type="Texture2D" uid="uid://cfhrasomwu4ct" path="res://assets/UI/Pack/Windows/8-3.png" id="2_gg4op"]
-[ext_resource type="Texture2D" uid="uid://vunx6bi457rx" path="res://assets/UI/Pack/Windows/8-1.png" id="3_xcpbe"]
-[ext_resource type="Texture2D" uid="uid://dslkfndos1n86" path="res://assets/UI/Pack/Frames/5-3.png" id="4_7tvlh"]
-[ext_resource type="Texture2D" uid="uid://ohismw2fep4k" path="res://assets/UI/Icons/Emojis_Free97.png" id="5_bpwx6"]
-[ext_resource type="Texture2D" uid="uid://djr2twwr0eumn" path="res://assets/UI/Pack/Frames/6-2.png" id="6_v6rqh"]
-[ext_resource type="Texture2D" uid="uid://bleuuhqdqf4ip" path="res://assets/UI/Pack/Windows/7-3.png" id="7_d8a2o"]
-[ext_resource type="Texture2D" uid="uid://bgafvr34o2fbp" path="res://assets/UI/Icons/Emojis_Free2.png" id="8_14anf"]
-[ext_resource type="Texture2D" uid="uid://d34yb2e0r4j8q" path="res://assets/UI/Icons/Emojis_Free111.png" id="9_b5ypj"]
-[ext_resource type="Texture2D" uid="uid://chtsbqi2dnecg" path="res://assets/UI/Icons/Emojis_Free112.png" id="10_mgkhf"]
+[ext_resource type="Script" path="res://scripts/StartScene.gd" id="1_3ir00"]
+[ext_resource type="Texture2D" uid="uid://cfhrasomwu4ct" path="res://Assets/UI/Pack/Windows/8-3.png" id="2_x3s1m"]
+[ext_resource type="Texture2D" uid="uid://vunx6bi457rx" path="res://Assets/UI/Pack/Windows/8-1.png" id="3_pii5t"]
+[ext_resource type="Texture2D" uid="uid://dslkfndos1n86" path="res://Assets/UI/Pack/Frames/5-3.png" id="4_j3hcf"]
+[ext_resource type="Texture2D" uid="uid://ohismw2fep4k" path="res://Assets/UI/Icons/Emojis_Free97.png" id="5_3ltbt"]
+[ext_resource type="Texture2D" uid="uid://djr2twwr0eumn" path="res://Assets/UI/Pack/Frames/6-2.png" id="6_0ru6e"]
+[ext_resource type="Texture2D" uid="uid://bleuuhqdqf4ip" path="res://Assets/UI/Pack/Windows/7-3.png" id="7_8sh17"]
+[ext_resource type="Texture2D" uid="uid://bgafvr34o2fbp" path="res://Assets/UI/Icons/Emojis_Free2.png" id="8_eoxt2"]
+[ext_resource type="Texture2D" uid="uid://d34yb2e0r4j8q" path="res://Assets/UI/Icons/Emojis_Free111.png" id="9_lyip4"]
+[ext_resource type="Texture2D" uid="uid://chtsbqi2dnecg" path="res://Assets/UI/Icons/Emojis_Free112.png" id="10_4sdtp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11vco"]
 bg_color = Color(0.823529, 0.47451, 0.341176, 1)
@@ -61,7 +61,7 @@ bg_color = Color(0.823529, 0.47451, 0.341176, 1)
 [node name="StartScene" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_xcxh2")
+script = ExtResource("1_3ir00")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -105,7 +105,7 @@ offset_top = 80.0
 offset_right = 330.0
 offset_bottom = 134.0
 scale = Vector2(2, 2)
-texture = ExtResource("2_gg4op")
+texture = ExtResource("2_x3s1m")
 
 [node name="PlayButton" type="Button" parent="CanvasLayer/GameMenu/1"]
 layout_mode = 0
@@ -133,7 +133,7 @@ offset_top = 208.0
 offset_right = 330.0
 offset_bottom = 262.0
 scale = Vector2(2, 2)
-texture = ExtResource("2_gg4op")
+texture = ExtResource("2_x3s1m")
 
 [node name="CreditsButton" type="Button" parent="CanvasLayer/GameMenu/2"]
 layout_mode = 0
@@ -161,7 +161,7 @@ offset_top = 336.0
 offset_right = 330.0
 offset_bottom = 390.0
 scale = Vector2(2, 2)
-texture = ExtResource("3_xcpbe")
+texture = ExtResource("3_pii5t")
 
 [node name="ExitButton" type="Button" parent="CanvasLayer/GameMenu/3"]
 layout_mode = 0
@@ -191,7 +191,7 @@ offset_top = 48.0
 offset_right = 1688.0
 offset_bottom = 204.0
 scale = Vector2(2, 2)
-texture = ExtResource("4_7tvlh")
+texture = ExtResource("4_j3hcf")
 
 [node name="PlayerIcon" type="TextureRect" parent="CanvasLayer/PlayerMenu/1"]
 layout_mode = 0
@@ -200,7 +200,7 @@ offset_top = 66.0
 offset_right = 90.0
 offset_bottom = 126.0
 pivot_offset = Vector2(30, 30)
-texture = ExtResource("5_bpwx6")
+texture = ExtResource("5_3ltbt")
 
 [node name="2" type="TextureRect" parent="CanvasLayer/PlayerMenu"]
 offset_left = 1584.0
@@ -208,7 +208,7 @@ offset_top = 320.0
 offset_right = 1688.0
 offset_bottom = 387.0
 scale = Vector2(2, 2)
-texture = ExtResource("6_v6rqh")
+texture = ExtResource("6_0ru6e")
 
 [node name="3" type="TextureRect" parent="CanvasLayer/PlayerMenu"]
 offset_left = 1520.0
@@ -216,7 +216,7 @@ offset_top = 432.0
 offset_right = 1694.0
 offset_bottom = 579.0
 scale = Vector2(2, 2)
-texture = ExtResource("7_d8a2o")
+texture = ExtResource("7_8sh17")
 
 [node name="GridContainer" type="GridContainer" parent="CanvasLayer/PlayerMenu/3"]
 layout_mode = 0
@@ -229,7 +229,7 @@ columns = 2
 [node name="1" type="TextureRect" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("8_14anf")
+texture = ExtResource("8_eoxt2")
 expand_mode = 2
 stretch_mode = 5
 
@@ -245,7 +245,7 @@ vertical_alignment = 1
 [node name="2" type="TextureRect" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("9_b5ypj")
+texture = ExtResource("9_lyip4")
 expand_mode = 2
 stretch_mode = 5
 
@@ -261,7 +261,7 @@ vertical_alignment = 1
 [node name="3" type="TextureRect" parent="CanvasLayer/PlayerMenu/3/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("10_mgkhf")
+texture = ExtResource("10_4sdtp")
 expand_mode = 2
 stretch_mode = 5
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7oupyc1q5qmr"
-path="res://.godot/imported/Emojis_Free129.png-f3f4def8f427c55cdbd60ffe87001f3d.ctex"
+path="res://.godot/imported/Emojis_Free129.png-9a94ea58870d0b5c533b2b4323a1851f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/Icons/Emojis_Free129.png"
-dest_files=["res://.godot/imported/Emojis_Free129.png-f3f4def8f427c55cdbd60ffe87001f3d.ctex"]
+source_file="res://Assets/UI/Icons/Emojis_Free129.png"
+dest_files=["res://.godot/imported/Emojis_Free129.png-9a94ea58870d0b5c533b2b4323a1851f.ctex"]
 
 [params]
 

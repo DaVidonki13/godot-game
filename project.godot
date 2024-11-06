@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="gioco scuola"
-run/main_scene="res://scenes/StartScene.tscn"
+config/name="Gioco Scuola"
+run/main_scene="res://Scenes/StartScene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-config/icon="res://assets/icon.svg"
+config/icon="res://assets/UI/Icons/Emojis_Free111.png"
 
 [display]
 
@@ -64,3 +64,4 @@ PauseAction={
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.266667, 0.141176, 0.203922, 1)

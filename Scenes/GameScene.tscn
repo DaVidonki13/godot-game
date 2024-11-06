@@ -1,51 +1,175 @@
-[gd_scene load_steps=21 format=3 uid="uid://dlrm4csto5u4u"]
+[gd_scene load_steps=24 format=4 uid="uid://ddrtvxawckxfy"]
 
-[ext_resource type="Script" path="res://scripts/GameScene.gd" id="1_ygm7y"]
-[ext_resource type="Texture2D" uid="uid://6nk40oy0gq8m" path="res://assets/UI/Pack/Windows/6-3.png" id="2_jg2h7"]
-[ext_resource type="Texture2D" uid="uid://c7iiwka8i3dlc" path="res://assets/UI/Pack/Windows/2-3.png" id="3_va5cu"]
-[ext_resource type="Texture2D" uid="uid://cjaju7i11n6np" path="res://assets/UI/Pack/Elements/7-1.png" id="4_j1iqj"]
-[ext_resource type="Texture2D" uid="uid://dfaeec36xv4bw" path="res://assets/UI/Pack/Elements/4-1.png" id="5_k3pol"]
-[ext_resource type="Texture2D" uid="uid://gifkvav2qx4c" path="res://assets/UI/Icons/Emojis_Free50.png" id="6_yhgg0"]
-[ext_resource type="Texture2D" uid="uid://bcmf2rk6vhbxl" path="res://assets/UI/Icons/Emojis_Free48.png" id="7_03hg8"]
-[ext_resource type="Texture2D" uid="uid://cbg41mdmlsl5v" path="res://assets/UI/Pack/Elements/9-2.png" id="8_vdebj"]
+[ext_resource type="Script" path="res://Scripts/GameScene.gd" id="1_tuxh4"]
+[ext_resource type="Texture2D" uid="uid://6nk40oy0gq8m" path="res://Assets/UI/Pack/Windows/6-3.png" id="2_jg2h7"]
+[ext_resource type="Texture2D" uid="uid://c48renl8xcms0" path="res://Assets/World/tileset.png" id="2_k5ogk"]
+[ext_resource type="PackedScene" uid="uid://cpc1ut83l4fwb" path="res://Scenes/Player.tscn" id="3_hnxb6"]
+[ext_resource type="Texture2D" uid="uid://c7iiwka8i3dlc" path="res://Assets/UI/Pack/Windows/2-3.png" id="3_va5cu"]
+[ext_resource type="Texture2D" uid="uid://cjaju7i11n6np" path="res://Assets/UI/Pack/Elements/7-1.png" id="4_j1iqj"]
+[ext_resource type="Texture2D" uid="uid://dfaeec36xv4bw" path="res://Assets/UI/Pack/Elements/4-1.png" id="5_k3pol"]
+[ext_resource type="Texture2D" uid="uid://gifkvav2qx4c" path="res://Assets/UI/Icons/Emojis_Free50.png" id="6_yhgg0"]
+[ext_resource type="Texture2D" uid="uid://bcmf2rk6vhbxl" path="res://Assets/UI/Icons/Emojis_Free48.png" id="7_03hg8"]
+[ext_resource type="Texture2D" uid="uid://cbg41mdmlsl5v" path="res://Assets/UI/Pack/Elements/9-2.png" id="8_vdebj"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42sph"]
-bg_color = Color(0.823529, 0.47451, 0.341176, 1)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_adytd"]
+texture = ExtResource("2_k5ogk")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, -2.625, -7, -2.875, -6.875, -5.625, -6.125, -7, -3.11355, -7.2132, -2.5, -8, 8, -8, 8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.625, -8, 2.875, -7, 5.625, -6.875, 7, -6.125, 7.2132, -3.11355, 8, -2.5, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -6, 8, -6, 6.875, -6.875, 6.75, -6.875, 4.125, -8, 4, -8, -8, 8, -8)
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 3.75, 6.875, 3.75, 6.875, 7, 6, 7, 5.625, 8, -8, 8, -8, -8, 8, -8)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -5.875, 8, -5.87197, 6.9596, -7, 6.875, -6.875, 4.5, -8, 4.5, -8, -8, 8, -8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4, 6.875, 3.875, 6.875, 7, 5.88786, 7.06636, 5.75, 8, -8, 8, -8, -8, 8, -8)
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -2.625, 8, -2.875, 7, -5.625, 6.875, -7, 6.125, -7.2132, 3.11355, -8, 2.5, -8, -8, 8, -8)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 2.625, 7, 2.875, 6.875, 5.625, 6.125, 7, 3.11355, 7.2132, 2.5, 8, -8, 8, -8, -8)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58s6d"]
+[sub_resource type="TileSet" id="TileSet_cxlor"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_adytd")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tkfi1"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_we3l4"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k1kxx"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_km08t"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v11b8"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ftypw"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3hnt6"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_44fx4"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o7phr"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bdxhw"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jhy55"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_grp25"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5oge7"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1syyh"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0aref"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qb0sd"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_shp2q"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3l3y"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ottp"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qeo3d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vihpr"]
 
 [node name="GameScene" type="Node2D"]
-script = ExtResource("1_ygm7y")
+script = ExtResource("1_tuxh4")
+
+[node name="Ground" type="TileMapLayer" parent="."]
+position = Vector2(0, 1)
+tile_map_data = PackedByteArray("AAADAAwAAAAAAAAAAAAEAAwAAAAHAAMAAAAFAAwAAAAHAAMAAAAGAAwAAAAHAAMAAAAHAAwAAAAHAAMAAAAIAAwAAAAHAAMAAAAJAAwAAAAHAAMAAAAKAAwAAAAHAAMAAAALAAwAAAAHAAMAAAAMAAwAAAAHAAMAAAANAAwAAAAHAAMAAAAOAAwAAAAHAAMAAAAPAAwAAAAHAAMAAAAQAAwAAAAHAAMAAAARAAwAAAAHAAMAAAASAAwAAAAHAAMAAAATAAwAAAAHAAMAAAAUAAwAAAAHAAMAAAAVAAwAAAAHAAMAAAAWAAwAAAAHAAMAAAAXAAwAAAAHAAMAAAAYAAwAAAAHAAMAAAAZAAwAAAAHAAMAAAAaAAwAAAACAAAAAAAEAA0AAAABAAEAAAAFAA0AAAABAAEAAAAGAA0AAAABAAEAAAAHAA0AAAABAAEAAAAIAA0AAAABAAEAAAAJAA0AAAABAAEAAAAKAA0AAAABAAEAAAALAA0AAAABAAEAAAAMAA0AAAABAAEAAAANAA0AAAABAAEAAAAOAA0AAAABAAEAAAAOAA4AAAABAAEAAAAPAA4AAAABAAEAAAAQAA4AAAABAAEAAAARAA4AAAABAAEAAAASAA4AAAABAAEAAAASAA0AAAABAAEAAAATAA0AAAABAAEAAAARAA0AAAABAAEAAAAQAA0AAAABAAEAAAAPAA0AAAABAAEAAAAUAA0AAAABAAEAAAAVAA0AAAABAAEAAAAWAA0AAAABAAEAAAAXAA0AAAABAAEAAAAYAA0AAAABAAEAAAAZAA0AAAABAAEAAAAZAA4AAAABAAEAAAAYAA4AAAABAAEAAAAXAA4AAAABAAEAAAAWAA4AAAABAAEAAAAVAA4AAAABAAEAAAAUAA4AAAABAAEAAAATAA4AAAABAAEAAAANAA4AAAABAAEAAAAMAA4AAAABAAEAAAALAA4AAAABAAEAAAAKAA4AAAABAAEAAAAJAA4AAAABAAEAAAAIAA4AAAABAAEAAAAHAA4AAAABAAEAAAAGAA4AAAABAAEAAAAFAA4AAAABAAEAAAAEAA4AAAABAAEAAAAaAA0AAAACAAEAAAAaAA4AAAACAAEAAAAaAA8AAAACAAIAAAAZAA8AAAABAAIAAAAYAA8AAAABAAIAAAAXAA8AAAABAAIAAAAWAA8AAAABAAIAAAAVAA8AAAABAAIAAAAUAA8AAAABAAIAAAATAA8AAAABAAIAAAASAA8AAAABAAIAAAARAA8AAAABAAIAAAAQAA8AAAABAAIAAAAPAA8AAAABAAIAAAAOAA8AAAABAAIAAAANAA8AAAABAAIAAAAMAA8AAAABAAIAAAALAA8AAAABAAIAAAAKAA8AAAABAAIAAAAJAA8AAAABAAIAAAAIAA8AAAABAAIAAAAHAA8AAAABAAIAAAAGAA8AAAABAAIAAAAFAA8AAAABAAIAAAAEAA8AAAABAAIAAAADAA8AAAAAAAIAAAADAA0AAAAAAAEAAAADAA4AAAAAAAEAAAAgAAoAAAAAAAEAAAAgAAkAAAAAAAEAAAAgAAsAAAAAAAEAAAAgAAwAAAAAAAEAAAAgAA0AAAAAAAEAAAAgAA4AAAAAAAEAAAAgAA8AAAAAAAEAAAAgABAAAAAAAAEAAAAgAAgAAAAAAAEAAAAgAAcAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_cxlor")
+
+[node name="Player" parent="." instance=ExtResource("3_hnxb6")]
+position = Vector2(244, 175)
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Background" type="Panel" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_42sph")
 
 [node name="LevelInfo" type="Node" parent="CanvasLayer"]
 
@@ -242,17 +366,17 @@ offset_bottom = -244.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 text = "Settings
 "
 
@@ -270,17 +394,17 @@ offset_bottom = -116.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 text = "Keys
 "
 
@@ -298,17 +422,17 @@ offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 text = "Menu
 "
 
@@ -326,17 +450,17 @@ offset_bottom = 124.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 text = "Quit
 "
 
@@ -354,17 +478,17 @@ offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3, 3)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 icon = ExtResource("6_yhgg0")
 icon_alignment = 1
 
@@ -382,17 +506,17 @@ offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3, 3)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 icon = ExtResource("7_03hg8")
 icon_alignment = 1
 
@@ -410,17 +534,17 @@ offset_bottom = 368.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.4, 1.4)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_58s6d")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tkfi1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_k1kxx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_v11b8")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3hnt6")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o7phr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_jhy55")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5oge7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aref")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_shp2q")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6ottp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_we3l4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_km08t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ftypw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_44fx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bdxhw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_grp25")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1syyh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_qb0sd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3l3y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qeo3d")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vihpr")
 icon = ExtResource("8_vdebj")
 icon_alignment = 1
 
